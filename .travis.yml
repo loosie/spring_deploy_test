@@ -16,9 +16,9 @@ script: "./gradlew clean build"
 
 # deploy 전에 수행 : jar+기타 설정 파일 .zip으로 압축
 before_deploy:
-  - zip -r freelec-springboot-webservice *
+  - zip -r spring_deploy_test *
   - mkdir -p deploy
-  - mv freelec-springboot-webservice.zip deploy/freelec-springboot-webservice.zip
+  - mv spring_deploy_test.zip deploy/spring_deploy_test.zip
 
 # (S3로 파일업로드 | CodeDeploy 배포) 외부 서비스와 연동될 행위들을 선언
 deploy:
