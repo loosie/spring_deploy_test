@@ -20,7 +20,7 @@ before_deploy:
   - cp scripts/*.sh before-deploy/ # scripts파일 추가
   - cp appspec.yml before-deploy/ # appsepc.yml 추가
   - cp build/libs/*.jar before-deploy/ # build/libs 목록 추가
-  - cd before-deploy && zip -r spring_deploy_test * # before-deploy로 이동 후 전체 압축
+  - cd before-deploy && zip -r before-deploy * # before-deploy로 이동 후 전체 압축
   - cd ../ && mkdir -p deploy # 상위 디렉토리 이동 후 deploy 디렉토리 생성
   - mv before-deploy/before-deploy.zip before-deploy/spring_deploy_test.zip # deploy로 zip파일 이동
 
