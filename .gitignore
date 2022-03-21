@@ -26,3 +26,4 @@ nbdist/
 .nb-gradle/
 
 application-oauth.yml
+application-real-db.yml
