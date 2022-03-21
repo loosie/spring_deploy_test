@@ -51,7 +51,7 @@ deploy:
     region: ap-northeast-2
     wait-until-deployed: true
     on:
-      all_branches: true # master말고 다른 모든 브런치 허용
+      all_branches: true # master말고 다른 모든 브런치 허용##
 
 # deploy 전에 수행 : jar+(기타 설정 파일) .zip으로 압축
 #before_deploy:
