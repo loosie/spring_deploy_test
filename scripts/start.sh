@@ -7,7 +7,6 @@ source ${ABSDIR}/profile.sh # 여기서도 profile.sh 함수를 사용
 REPOSITORY=/home/ec2-user/app/step3
 PROJECT_NAME=spring_deploy_test
 
-
 echo "> Build 파일 복사"
 echo "> cp $REPOSITORY/zip/*.jar $REPOSITORY/"
 
@@ -23,6 +22,8 @@ echo "> $JAR_NAME 에 실행권한 추가"
 chmod +x $JAR_NAME
 
 echo "> $JAR_NAME 실행"
+
+IDLE_PROFILE=$(find_idle_profile)
 
 echo "> $JAR_NAME 를 profile=$IDLE_PROFILE로 실행합니다."
 nohup java -jar \
