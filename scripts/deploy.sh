@@ -10,7 +10,6 @@ cp $REPOSITORY/zip/*.jar $REPOSITORY/
 echo "> 현재 구동 중인 애플리케이션 pid 확인"
 
 CURRENT_PID=$(lsof -ti tcp:8080)
-#CURRENT_PID=$(pgrep -fl spring_deploy_test | grep jar | awk '{print $1}')
 
 echo "현재 구동 중인 애플리케이션 pid : $CURRENT_PID"
 
